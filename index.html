@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghumparani — Explore | Discover | Book</title>
+    <meta name="description" content="Ghumparani landing page — discover unique travel experiences." />
+    <style>
+      :root{--accent:#ff6b6b;--bg:#0f1724;--card:#0b1220;--muted:#94a3b8}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071127 0%, #0f1724 100%);color:#fff;line-height:1.4}
+      .container{max-width:1100px;margin:0 auto;padding:48px 20px}
+      header{display:flex;align-items:center;justify-content:space-between}
+      .brand{display:flex;align-items:center;gap:12px}
+      .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ffa94d);display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b1220}
+      nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+      .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;margin-top:48px}
+      h1{font-size:38px;margin:0 0 12px}
+      p.lead{color:var(--muted);margin:0 0 20px}
+      .cta{display:flex;gap:12px}
+      .btn{background:var(--accent);border:0;padding:12px 18px;border-radius:10px;color:#071127;font-weight:600;cursor:pointer}
+      .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--muted)}
+      .card{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px}
+      .feature{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+      .feature .dot{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center}
+      footer{margin-top:64px;padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
+      @media (max-width:880px){.hero{grid-template-columns:1fr;}.container{padding:28px 16px}h1{font-size:30px}} 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">G</div>
+          <div>
+            <strong>Ghumparani</strong>
+            <div style="font-size:13px;color:var(--muted)">Local experiences & curated tours</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#places">Places</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section>
+          <h1>Discover unforgettable travel experiences</h1>
+          <p class="lead">Curated local tours, handpicked stays, and experiences that make every trip memorable. Explore destinations, book with ease, and travel responsibly.</p>
+          <div class="cta">
+            <button class="btn">Explore tours</button>
+            <button class="btn ghost">Contact us</button>
+          </div>
+
+          <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+            <div class="card" style="min-width:200px;flex:1">
+              <div class="feature">
+                <div class="dot">⭐</div>
+                <div>
+                  <div style="font-weight:600">Top-rated guides</div>
+                  <div style="color:var(--muted);font-size:13px">Local experts who know the hidden gems.</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="min-width:200px;flex:1">
+              <div class="feature">
+                <div class="dot">🌱</div>
+                <div>
+                  <div style="font-weight:600">Sustainable travel</div>
+                  <div style="color:var(--muted);font-size:13px">Small-group tours and eco-friendly stays.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Featured Destination</h3>
+          <img src="https://via.placeholder.com/380x200.png?text=Ghumparani" alt="Featured" style="width:100%;border-radius:8px;display:block;margin-bottom:12px">
+          <div style="color:var(--muted);font-size:14px">From city escapes to wilderness retreats — pick the pace that fits you.</div>
+        </aside>
+      </main>
+
+      <section id="about" style="margin-top:48px">
+        <h2>About Ghumparani</h2>
+        <p style="color:var(--muted)">Ghumparani connects travelers with authentic local experiences. Our mission is to support small businesses and promote meaningful travel.</p>
+      </section>
+
+      <footer id="contact">
+        © 
